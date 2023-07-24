@@ -1,0 +1,42 @@
+spring:
+  thymeleaf:
+    cache: true
+    check-template: true
+
+    #.html 파일 불러올 경로 설정
+    prefix: classpath:/templates/
+
+    # 파일 확장자
+    suffix: .html
+
+    mode: HTML
+
+    check-template-location: true
+  servlet:
+    multipart:
+      enabled: false
+
+  datasource:
+    driver-class-name: org.mariadb.jdbc.Driver
+    url: jdbc:mariadb://gorilla-center-dev.ccwgrisbe32j.ap-northeast-2.rds.amazonaws.com:10309/gorilla_alpha?characterEncoding=UTF-8&rewriteBatchedStatements=true
+    username: gorilla
+    password: GMC4e-qDvNnGoiaU.T4J
+
+  devtools:
+    livereload:
+      enabled: true
+    restart:
+      enabled: true
+
+  main:
+    allow-bean-definition-overriding: false
+
+  mvc:
+    # spring mvc 정적경로
+    static-path-pattern: /static/**
+
+  jpa:
+    open-in-view: false
+
+server:
+  port: 8081
