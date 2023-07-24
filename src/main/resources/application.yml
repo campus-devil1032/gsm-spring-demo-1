@@ -16,12 +16,6 @@ spring:
     multipart:
       enabled: false
 
-  datasource:
-    driver-class-name: org.mariadb.jdbc.Driver
-    url: jdbc:mariadb://gorilla-center-dev.ccwgrisbe32j.ap-northeast-2.rds.amazonaws.com:10309/gorilla_alpha?characterEncoding=UTF-8&rewriteBatchedStatements=true
-    username: gorilla
-    password: GMC4e-qDvNnGoiaU.T4J
-
   devtools:
     livereload:
       enabled: true
